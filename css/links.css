@@ -1,0 +1,132 @@
+/* Links Page Header */
+.links-intro {
+  padding-top: calc(var(--nav-height) + var(--space-3xl));
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(247, 148, 29, 0.06) 0%, transparent 60%),
+    var(--color-bg-primary);
+}
+
+/* Resource Cards */
+.resource-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+.resource-card {
+  padding: var(--space-xl);
+  border-top: 3px solid var(--color-accent);
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.resource-card:hover {
+  border-color: var(--color-accent);
+}
+
+.resource-card h3 {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-xs);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.resource-card h3 svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.resource-card .resource-desc {
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+}
+
+.resource-card .resource-url {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  word-break: break-all;
+  transition: color var(--transition-fast);
+}
+
+.resource-card:hover .resource-url {
+  color: var(--color-accent);
+}
+
+@media (min-width: 768px) {
+  .resource-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Links We Like */
+.likes-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.like-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.like-item:hover {
+  border-color: var(--color-border-hover);
+  background: var(--color-bg-card-hover);
+}
+
+.like-item-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--border-radius-sm);
+  background: var(--color-accent-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.like-item-icon svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-accent);
+}
+
+.like-item-text h4 {
+  font-size: var(--text-base);
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.like-item-text p {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.like-item .external-icon {
+  margin-left: auto;
+  width: 16px;
+  height: 16px;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+  transition: color var(--transition-fast);
+}
+
+.like-item:hover .external-icon {
+  color: var(--color-accent);
+}

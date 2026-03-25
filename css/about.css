@@ -1,0 +1,202 @@
+/* About Page Header */
+.about-intro {
+  padding-top: calc(var(--nav-height) + var(--space-3xl));
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(247, 148, 29, 0.06) 0%, transparent 60%),
+    var(--color-bg-primary);
+}
+
+/* Founder Section */
+.founder-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+.founder-text h2 {
+  margin-bottom: var(--space-lg);
+}
+
+.founder-text p {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+}
+
+.founder-visual {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.founder-logo-wrap {
+  width: clamp(180px, 20vw, 260px);
+  padding: var(--space-xl);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.founder-logo-wrap img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .founder-grid {
+    grid-template-columns: 1.3fr 0.7fr;
+  }
+}
+
+/* Mochimo Badge */
+.mochimo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  margin-top: var(--space-md);
+}
+
+.mochimo-badge svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-accent);
+}
+
+/* Certifications Section */
+.certs-section {
+  background: var(--color-bg-secondary);
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+}
+
+.cert-card:hover {
+  border-color: var(--color-accent);
+}
+
+.cert-logo {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: var(--space-md);
+  line-height: 1;
+}
+
+.cert-name {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.cert-issuer {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 768px) {
+  .certs-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Education & Training */
+.training-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  margin-top: var(--space-2xl);
+}
+
+.training-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  border-left: 3px solid var(--color-accent);
+}
+
+.training-item svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.training-item-text h4 {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.training-item-text p {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .training-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Community Section */
+.community-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+.community-card {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-xl);
+}
+
+.community-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--color-accent);
+  margin: 0 auto var(--space-md);
+}
+
+.community-card h3 {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.community-card p {
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+  .community-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

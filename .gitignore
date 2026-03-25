@@ -1,0 +1,11 @@
+# Reference screenshots (not part of the site)
+screenshots/
+*.png
+
+# Obsidian
+.obsidian/
+
+# Misc
+claude.continue
+.DS_Store
+Thumbs.db
