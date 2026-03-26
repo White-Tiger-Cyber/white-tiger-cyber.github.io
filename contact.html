@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | White Tiger Cyber</title>
+  <meta name="description" content="Contact White Tiger Cyber to discuss your cybersecurity needs. Serving small-to-medium businesses along the Gulf Coast and beyond.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/contact.css">
+
+  <style>
+    body { background: #0a0a0a; color: #f0f0f0; }
+    #nav-placeholder:empty { min-height: 96px; }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <section class="contact-intro section">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h1>Contact Us</h1>
+          <div class="accent-line"></div>
+          <p>Ready to strengthen your security posture? Let's talk about what White Tiger Cyber can do for your business.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form + Info -->
+    <section class="contact-form-section section">
+      <div class="container">
+        <div class="contact-layout">
+
+          <!-- Info Column -->
+          <div class="contact-info-block fade-up">
+            <h2>Get in Touch</h2>
+            <p>Whether you need a vulnerability assessment, penetration test, digital forensics support, or just want to ask a question — we're here.</p>
+
+            <div class="contact-info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <div>
+                <strong>Email</strong><br>
+                <a href="mailto:info@whitetigercyber.com">info@whitetigercyber.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <strong>Phone</strong><br>
+                <a href="tel:+18503478488">850-347-8488</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Location</strong><br>
+                Serving the Gulf Coast and beyond
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Column -->
+          <div class="contact-form-card fade-up">
+
+            <!-- Success message — hidden until ?submitted=true -->
+            <div class="contact-success" id="contact-success" aria-live="polite">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              <h3>Message Received</h3>
+              <p>Thank you for reaching out. We'll be in touch shortly.</p>
+            </div>
+
+            <!-- Form -->
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST"
+            >
+              <!-- Redirect back after submit -->
+              <input type="hidden" name="_next" value="https://whitetigercyber.com/contact.html?submitted=true">
+
+              <!-- Honeypot — do NOT use display:none, bots will skip it -->
+              <input
+                type="text"
+                name="_gotcha"
+                class="form-honeypot"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              >
+
+              <div class="form-group">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Your full name"
+                  required
+                  autocomplete="name"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="you@company.com"
+                  required
+                  autocomplete="email"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">
+                  Phone <span class="optional">(optional)</span>
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="form-input"
+                  placeholder="(850) 000-0000"
+                  autocomplete="tel"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-textarea"
+                  placeholder="Tell us about your security needs or ask a question..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-submit-row">
+                <button type="submit" class="btn btn-primary">Send Message
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="/js/nav.js"></script>
+  <script src="/js/animations.js"></script>
+  <script src="/js/components.js"></script>
+
+  <script>
+    // Show success state when Formspree redirects back with ?submitted=true.
+    // User input is never read from the URL and rendered to the page — no XSS risk.
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('submitted') === 'true') {
+        var form = document.getElementById('contact-form');
+        var success = document.getElementById('contact-success');
+        if (form) form.style.display = 'none';
+        if (success) success.classList.add('visible');
+        // Clean the URL so a page refresh doesn't re-show the success state
+        window.history.replaceState({}, '', window.location.pathname);
+      }
+    })();
+  </script>
+
+</body>
+</html>

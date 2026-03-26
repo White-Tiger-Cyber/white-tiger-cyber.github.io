@@ -31,14 +31,15 @@
 }
 
 .founder-logo-wrap {
-  width: clamp(180px, 20vw, 260px);
-  padding: var(--space-xl);
+  width: clamp(240px, 30vw, 380px);
+  padding: var(--space-2xl);
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 40px rgba(247, 148, 29, 0.12);
 }
 
 .founder-logo-wrap img {

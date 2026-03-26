@@ -47,6 +47,7 @@ function highlightCurrentPage() {
   if (path.includes('services')) currentPage = 'services';
   else if (path.includes('about')) currentPage = 'about';
   else if (path.includes('links')) currentPage = 'links';
+  else if (path.includes('contact')) currentPage = 'contact';
 
   document.querySelectorAll('.nav-link').forEach(link => {
     if (link.dataset.page === currentPage) {

@@ -4,6 +4,18 @@
   padding-block: var(--space-3xl) var(--space-xl);
 }
 
+.footer-hero {
+  display: flex;
+  justify-content: center;
+  padding-bottom: var(--space-2xl);
+}
+
+.footer-hero-logo {
+  height: 120px;
+  width: auto;
+  opacity: 0.9;
+}
+
 .footer-content {
   display: grid;
   grid-template-columns: 1fr;

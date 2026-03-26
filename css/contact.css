@@ -1,0 +1,178 @@
+/* Contact Page */
+.contact-intro {
+  padding-top: calc(var(--nav-height) + var(--space-3xl));
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(247, 148, 29, 0.06) 0%, transparent 60%),
+    var(--color-bg-primary);
+}
+
+.contact-form-section {
+  background: var(--color-bg-primary);
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3xl);
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+/* Info column */
+.contact-info-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.contact-info-block h2 {
+  margin-bottom: 0;
+}
+
+.contact-info-block > p {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-top: calc(-1 * var(--space-md));
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+}
+
+.contact-info-item svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contact-info-item a {
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.contact-info-item a:hover {
+  color: var(--color-accent);
+}
+
+/* Form card */
+.contact-form-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-2xl);
+}
+
+/* Form fields */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-lg);
+}
+
+.form-label {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.form-label .optional {
+  color: var(--color-text-muted);
+  font-weight: 400;
+  font-size: var(--text-xs);
+  margin-left: var(--space-xs);
+}
+
+.form-input,
+.form-textarea {
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  padding: 0.75rem 1rem;
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  width: 100%;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(247, 148, 29, 0.12);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 140px;
+  line-height: 1.6;
+}
+
+/* Honeypot — absolute offscreen, NOT display:none (bots still fill it) */
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  opacity: 0;
+  pointer-events: none;
+  tabindex: -1;
+}
+
+/* Submit */
+.form-submit-row {
+  margin-top: var(--space-xl);
+}
+
+.form-submit-row .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Success message */
+.contact-success {
+  display: none;
+  text-align: center;
+  padding: var(--space-2xl);
+}
+
+.contact-success.visible {
+  display: block;
+}
+
+.contact-success svg {
+  width: 48px;
+  height: 48px;
+  color: var(--color-accent);
+  margin: 0 auto var(--space-md);
+  display: block;
+}
+
+.contact-success h3 {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-md);
+}
+
+.contact-success p {
+  color: var(--color-text-secondary);
+  font-size: var(--text-lg);
+}
