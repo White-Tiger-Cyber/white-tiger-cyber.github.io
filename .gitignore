@@ -1,6 +1,8 @@
 # Reference screenshots (not part of the site)
 screenshots/
 *.png
+!images/**/*.png
+!images/*.png
 
 # Obsidian
 .obsidian/
