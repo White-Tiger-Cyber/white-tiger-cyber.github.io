@@ -124,6 +124,26 @@
   color: var(--color-accent);
 }
 
+.footer-github {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-github:hover {
+  color: var(--color-text-secondary);
+}
+
+.footer-github svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
 @media (min-width: 768px) {
   .footer-content {
     grid-template-columns: 2fr 1fr 1fr;
