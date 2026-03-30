@@ -48,6 +48,7 @@ function highlightCurrentPage() {
   else if (path.includes('about')) currentPage = 'about';
   else if (path.includes('links')) currentPage = 'links';
   else if (path.includes('certifications')) currentPage = 'certifications';
+  else if (path.includes('projects')) currentPage = 'projects';
   else if (path.includes('contact')) currentPage = 'contact';
 
   document.querySelectorAll('.nav-link').forEach(link => {
