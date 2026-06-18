@@ -1,0 +1,11 @@
+# security.txt for White Tiger Cyber
+# Standard: RFC 9116 (https://www.rfc-editor.org/rfc/rfc9116)
+# If you believe you have found a security vulnerability affecting
+# whitetigercyber.com or our services, please reach out using the
+# contact below. We appreciate coordinated, responsible disclosure.
+
+Contact: mailto:info@whitetigercyber.com
+Expires: 2027-06-17T00:00:00Z
+Preferred-Languages: en
+Canonical: https://whitetigercyber.com/.well-known/security.txt
+Acknowledgments: https://whitetigercyber.com/security-acknowledgments.html
