@@ -110,6 +110,15 @@
   font-size: var(--text-xs);
 }
 
+.footer-security-link {
+  color: var(--color-accent);
+  transition: color var(--transition-fast);
+}
+
+.footer-security-link:hover {
+  color: var(--color-accent-hover);
+}
+
 .footer-serving {
   color: var(--color-text-muted);
   font-size: var(--text-xs);
