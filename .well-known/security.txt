@@ -5,7 +5,7 @@
 # contact below. We appreciate coordinated, responsible disclosure.
 
 Contact: mailto:info@whitetigercyber.com
-Expires: 2027-06-17T00:00:00Z
+Expires: 2027-07-01T00:00:00Z
 Preferred-Languages: en
 Canonical: https://whitetigercyber.com/.well-known/security.txt
 Acknowledgments: https://whitetigercyber.com/security-acknowledgments.html
